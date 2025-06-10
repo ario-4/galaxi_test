@@ -1,10 +1,10 @@
 {
-  "name": "PWA Welcome App",
-  "short_name": "WelcomePWA",
-  "start_url": "index.html",
+  "name": "Buscador de Perfumes",
+  "short_name": "Perfumes",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#002855",
-  "theme_color": "#002855",
+  "background_color": "#fdf6f0",
+  "theme_color": "#4a2c2a",
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -16,5 +16,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "lang": "es-ES"
 }

@@ -1,26 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PWA Welcome App</title>
-  <link rel="manifest" href="manifest.json">
+  <title>Buscador de Perfumes</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="theme-color" content="#002855"/>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome</h1>
-  </div>
+    <h1>Buscador de Perfumes</h1>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(reg => console.log('✅ Service Worker registered:', reg.scope))
-          .catch(err => console.log('❌ Service Worker registration failed:', err));
-      });
-    }
-  </script>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Escribe el nombre del perfume...">
+     <button id="scanBtn">
+  <img src="icons/scan-icon.svg" alt="Escanear" width="30" height="30">
+</button>
+
+    </div>
+
+    <button id="advancedSearchToggle">Búsqueda Avanzada</button>
+    <div id="advancedSearch" class="hidden">
+  <input type="text" id="topNotes" placeholder="Notas de Salida (ej: naranja, limón)">
+  <input type="text" id="heartNotes" placeholder="Notas de Corazón">
+  <input type="text" id="baseNotes" placeholder="Notas de Fondo">
+  <input type="text" id="acordsInput" placeholder="Acordes (ej: Amaderado, Vainilla)">
+  <button id="advancedSearchBtn">Buscar</button>
+</div>
+<hr>
+<h3>🔍 Probar código de barras</h3>
+<input type="text" id="barcodeTest" placeholder="Introduce un código de barras...">
+<button id="barcodeSearchBtn">Buscar por código</button>
+
+
+
+    <div id="loading" class="hidden">🔍 Escaneando...</div>
+    <button id="cancel-scan" class="hidden cancel-btn">
+  ❌ Cancelar
+     </button>
+
+    <div id="results"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>
+  <script src="imageMatcher.js"></script>
+  <script src="libs/tesseract.min.js"></script>
+  <script src="libs/quagga.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="searchEngine.js"></script>
+  <script src="scanner.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

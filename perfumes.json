@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "barcode": "123456789012",
+    "name": "riqqa",
+    "brand": "Aranian Oud",
+    "origin": "Arabia Saudita",
+    "year": "2020",
+    "gender": "Unisex",
+    "description": "Una fragancia oriental lujosa con una base fuerte de oud y especias.",
+    "acords": ["Amaderado", "Especiado", "Oud"],
+    "nots": {
+      "Top": ["Naranja", "Limón"],
+      "Heart": ["Rosa", "Azafrán"],
+      "Base": ["Oud", "Pachuli"]
+    },
+    "image": "images/perfume1.jpg"
+  },
+  {
+    "id": 1,
+    "barcode": "123456789012",
+    "name": "Oud Al Sultan1",
+    "brand": "Arabian Oud",
+    "origin": "Abina Saudita",
+    "year": "2020",
+    "gender": "Unisex",
+    "description": "Una fragancia oriental lujosa con una base fuerte de oud y especias.",
+    "acords": ["Amaderado", "Especiado", "Oud"],
+    "nots": {
+      "Top": ["Naranja", "Limón"],
+      "Heart": ["Rosa", "Azafrán"],
+      "Base": ["Oud", "Pachuli","reza"]
+    },
+    "image": "images/perfume1.jpg"
+  },
+  {
+    "id": 2,
+    "barcode": "987654321098",
+    "name": "Mukhallat Al Ward",
+    "brand": "Rasasi",
+    "origin": "Emiratos Árabes Unidos",
+    "year": "2021",
+    "gender": "Femenino",
+    "description": "Perfume floral con una mezcla dulce de rosa y vainilla.",
+    "acords": ["Floral", "Dulce", "Vainilla"],
+    "nots": {
+      "Top": ["Rosa", "Frambuesa"],
+      "Heart": ["Lirio", "Jazmín"],
+      "Base": ["Vainilla", "Almizcle"]
+    },
+    "image": "images/perfume2.jpg"
+  }
+]
